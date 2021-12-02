@@ -7,10 +7,10 @@ const countDepthIncreases = (depths) => {
 	depths.forEach(function (depth, index) {
 		const prevIndex = index - 1;
 		if (depths[prevIndex] < depths[index]) {
-			acc = acc + 1;
+			acc++;
 		}
 	});
-  return acc;
+	return acc;
 }
 
 console.log(countDepthIncreases(depths));
